@@ -1,73 +1,124 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tabela Desafio 4</title>
-    <style>
-      table {
-        width: 600px;
-        height: 400px;
-        border: 1px solid #37885a;
-      }
-
-      th,
-      td {
-        padding: 8px;
-        text-align: center;
-        border: 1px solid #37885a;
-        font-weight: 700;
-      }
-
-      tr:hover {
-        background-color: #37885a;
-      }
-      .titulo {
-        background-color: #37885a;
-        text-align: center;
-        color: #ffff;
-        font-size: 20px;
-        font-weight: bold;
-      }
-    </style>
+    <title>Desafio 4</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <table>
-      <tbody>
-        <tr>
-          <td class="titulo" colspan="3">Tabela De Produtos</td>
-        </tr>
-        <tr class="titulo">
-          <th>Código</th>
-          <th>Nome</th>
-          <th>Preço</th>
-        </tr>
-        <tr>
-          <td>0001</td>
-          <td>Pão</td>
-          <td>R$ 0,50</td>
-        </tr>
-        <tr>
-          <td>0002</td>
-          <td>Queijo</td>
-          <td>R$ 5,80</td>
-        </tr>
-        <tr>
-          <td>0003</td>
-          <td>Leite</td>
-          <td>R$ 10,45</td>
-        </tr>
-        <tr>
-          <td>0004</td>
-          <td>Biscoito</td>
-          <td>R$ 3,90</td>
-        </tr>
-        <tr>
-          <td>0005</td>
-          <td>Arroz</td>
-          <td>RS$30,00</td>
-        </tr>
-      </tbody>
-    </table>
+    <header>
+      <div>
+        <a href="index.html">
+          <img src="./Icones/Logo5 (1) 1.svg" alt="Logo" />
+          <d</a
+        >
+      </div>
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="cachorros.html">CACHORROS</a>
+        <a href="link2">GATOS</a>
+        <a href="link3">CONTATOS</a>
+        <a href="link4">SERVIÇOS</a>
+      </nav>
+
+      <div class="icones">
+        <form action="LINK-LUPA" method="GET" class="pesquisar">
+          <input placeholder="Pesquisar" class="search-input" />
+          <button type="submit" class="search-button">
+            <img
+              src="./Icones/pesquisa.png"
+              alt="Pesquisa"
+              class="search-icon"
+            />
+          </button>
+        </form>
+
+        <a href="LINK-FAV">
+          <ul>
+            <img src="./Icones/coracao.png" alt="" /></ul
+        ></a>
+        <a href="LINK-USER">
+          <ul>
+            <img src="./Icones/perfil-de-usuario.png" alt="" /></ul
+        ></a>
+        <a href="LINK-CARRINHO">
+          <ul>
+            <img src="./Icones/bolsa-de-compras.png" alt="" /></ul
+        ></a>
+      </div>
+    </header>
+    <hr class="green-line" />
+
+    <main><div class="banner"></div></main>
+    <hr class="green-line-2" />
+    <article>
+      <div><h1>AQUI NOS CUIDAMOS DO SEU PET</h1></div>
+
+      <div class="tema1">
+        <li>
+          <img src="./Icones/pet/image 6.svg" alt="" />
+          <p>
+            Companheiro fiel, o cachorro é um amigo leal que alegra <br />
+            nossos dias com brincadeiras e carinho. <br />Sua lealdade é um
+            exemplo de amor incondicional.
+          </p>
+        </li>
+        <li>
+          <img src="./Icones/pet/daria-shatova-46TvM-BVrRI-unsplash 1.svg" />
+          <p>
+            Elegantes, independentes e cheios de personalidade, os gatos
+            encantam com seus <br />
+            miados suaves e momentos de carinho que aquecem o coração.
+          </p>
+        </li>
+        <li>
+          <img src="./icones/pet/image 5.svg" alt="" />
+          <p>
+            Os olhos brilhantes, o rabo abanando e a alegria <br />
+            contagiante. Ter um cachorro é ter um motivo diário para sorrir e
+            sentir-se amado.
+          </p>
+        </li>
+      </div>
+    </article>
+
+    <div class="container">
+      <h1>Jogo de Adivinhação sobre Pets</h1>
+      <div class="question">
+        Qual é o animal de estimação mais popular do mundo?
+      </div>
+      <div class="options">
+        <div class="option" onclick="checkAnswer('Cachorro')">Cachorro</div>
+        <div class="option" onclick="checkAnswer('Gato')">Gato</div>
+        <div class="option" onclick="checkAnswer('Peixe')">Peixe</div>
+        <div class="option" onclick="checkAnswer('Pássaro')">Pássaro</div>
+      </div>
+      <div class="result" id="result"></div>
+    </div>
+
+    <script>
+      function checkAnswer(answer) {
+        var result = document.getElementById("result");
+        if (answer === "Cachorro") {
+          result.textContent =
+            "Resposta correta! Os cachorros são os animais de estimação mais populares.";
+          result.style.color = "green";
+        } else {
+          result.textContent = "Resposta incorreta! Tente novamente.";
+          result.style.color = "red";
+        }
+      }
+    </script>
+
+    <footer class="footer">
+      <div class="social-icons">
+        <a href="#"><img src="./Icones/facebook.png" alt="Facebook" /></a>
+        <a href="#"><img src="./Icones/instagram.png" alt="Instagram" /></a>
+        <a href="#"><img src="./Icones/twitter.png" alt="Twitter" /></a>
+      </div>
+      <p>
+        Entre em contato:
+        <a href="mailto:gatoecao@cao.com">contato@stylepet.com</a>
+      </p>
+    </footer>
   </body>
 </html>
