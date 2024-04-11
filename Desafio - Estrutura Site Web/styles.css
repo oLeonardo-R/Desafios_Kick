@@ -3,35 +3,39 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f0f0f0;
   background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20210903/pngtree-technology-robot-blue-technology-sense-lines-image_793551.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; /* Ajusta o tamanho da imagem de fundo para cobrir toda a tela */
 }
+
 header {
-  color: white;
+  color: rgb(238, 236, 236);
   padding: 10px;
   text-align: center;
 }
+
 nav {
   background-color: #000000;
   padding: 10px;
+  text-align: center; /* Centraliza o texto dentro do nav */
 }
+
 nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  text-align: center;
 }
+
 nav ul li {
   display: inline;
   margin-right: 20px;
 }
+
 nav ul li a {
-  color: white;
+  color: rgb(255, 255, 255);
   text-decoration: none;
   font-size: 18px;
 }
+
 .container {
   max-width: 800px;
   margin: 20px auto;
@@ -40,20 +44,45 @@ nav ul li a {
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 .section {
   margin-bottom: 20px;
 }
+
 h2 {
   color: #333;
 }
+
 p {
   line-height: 1.6;
 }
+
+/* Estilos para as tabelas */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #dddddd;
+  padding: 8px;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+/* Footer */
 footer {
-  color: white;
   text-align: center;
   padding: 10px;
   position: fixed;
   bottom: 0;
   width: 100%;
+  background-color: #000000; /* Adiciona um fundo transparente ao footer */
 }
