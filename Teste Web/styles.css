@@ -1,0 +1,119 @@
+/* Estilos para a barra de navegação */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f0f0f0;
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+nav ul li {
+  margin-right: 20px;
+}
+nav input[type="text"] {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Estilos para o banner principal */
+#banner {
+  text-align: center;
+  padding: 50px 0;
+  background-color: #ffeecc;
+}
+#banner button {
+  padding: 10px 20px;
+  background-color: #ff6600;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Estilos para a seção de produtos em destaque */
+#destaque {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.produto {
+  width: 30%;
+  margin: 10px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.produto img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+/* Estilos para a seção de informações da empresa */
+#empresa {
+  padding: 50px 0;
+  background-color: #f5f5f5;
+}
+#depoimentos {
+  margin-top: 20px;
+  text-align: center;
+}
+#depoimentos p {
+  margin-bottom: 20px;
+}
+
+/* Estilos para o rodapé */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+footer ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+footer form {
+  margin-top: 20px;
+}
+footer input[type="email"] {
+  padding: 5px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+footer button[type="submit"] {
+  padding: 5px 10px;
+  background-color: #ff6600;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Media queries para tornar o site responsivo */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+  nav ul li {
+    margin-bottom: 10px;
+  }
+
+  #destaque .produto {
+    width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  #destaque .produto {
+    width: 100%;
+  }
+}

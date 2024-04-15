@@ -4,7 +4,7 @@ body {
   margin: 0;
   padding: 0;
   background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20210903/pngtree-technology-robot-blue-technology-sense-lines-image_793551.jpg);
-  background-size: cover; /* Ajusta o tamanho da imagem de fundo para cobrir toda a tela */
+  background-size: cover;
 }
 
 header {
@@ -16,7 +16,7 @@ header {
 nav {
   background-color: #000000;
   padding: 10px;
-  text-align: center; /* Centraliza o texto dentro do nav */
+  text-align: center;
 }
 
 nav ul {
@@ -66,7 +66,7 @@ table {
 th,
 td {
   border: 1px solid #dddddd;
-  padding: 8px;
+  padding: 12px;
 }
 
 th {
@@ -84,5 +84,4 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  background-color: #000000; /* Adiciona um fundo transparente ao footer */
 }
