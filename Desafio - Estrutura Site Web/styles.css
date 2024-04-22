@@ -85,3 +85,23 @@ footer {
   bottom: 0;
   width: 100%;
 }
+
+/* Estilos para as tabelas com identificadores semânticos */
+#limpeza-roomba,
+#limpeza-winbot,
+#industriais-ur5,
+#industriais-fanuc,
+#autonomos-atlas,
+#autonomos-spot {
+  font-weight: bold;
+  color: #007bff;
+}
+
+#limpeza-roomba-funcao,
+#limpeza-winbot-funcao,
+#industriais-ur5-funcao,
+#industriais-fanuc-funcao,
+#autonomos-atlas-funcao,
+#autonomos-spot-funcao {
+  font-style: italic;
+}
