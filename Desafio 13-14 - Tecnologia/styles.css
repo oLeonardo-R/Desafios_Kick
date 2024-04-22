@@ -4,8 +4,8 @@ body {
   padding: 0;
   background-color: #9e958d;
   background-image: url(https://pbs.twimg.com/media/GFl4ujOXwAUF4-Y?format=jpg&name=large);
-  background-repeat: no-repeat; /* Repeat the image (optional) */
-  background-size: cover; /* Resize the image to cover the entire area */
+  background-repeat: no-repeat;
+  background-size: cover;
   background-position: center;
   background-attachment: fixed;
   overflow-x: hidden;
@@ -50,6 +50,68 @@ nav a:hover {
 }
 
 /* Conteúdo Principal */
+
+.wrapper {
+  position: absolute;
+  bottom: 90%;
+  top: 57%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.link_wrapper {
+  position: relative;
+}
+
+a {
+  display: block;
+  width: 250px;
+  height: 50px;
+  line-height: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  background: #f0eeee;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 3px solid #333;
+  transition: all 0.35s;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  border: 3px solid transparent;
+  position: absolute;
+  transform: rotate(45deg);
+  right: 0;
+  top: 0;
+  z-index: -1;
+  transition: all 0.35s;
+}
+
+.icon svg {
+  width: 30px;
+  position: absolute;
+  top: calc(50% - 15px);
+  left: calc(50% - 15px);
+  transform: rotate(-45deg);
+  fill: #e3e9e5;
+  transition: all 0.35s;
+}
+
+a:hover {
+  width: 200px;
+  border: 3px solid #2ecc71;
+  background: transparent;
+  color: #2ecc71;
+}
+
+a:hover + .icon {
+  border: 3px solid #070808;
+  right: -25%;
+}
 .secao-principal {
   width: 80%;
   margin: 0 auto;
@@ -97,13 +159,14 @@ nav a:hover {
 }
 
 .album-info h2 {
-  color: #333;
+  color: #666;
   font-size: 1.5em;
   margin-bottom: 10px;
+  padding: 40px;
 }
 
 .album-info p {
-  color: #666;
+  color: #000000;
   line-height: 1.5;
   margin-bottom: 10px;
 }
@@ -118,7 +181,7 @@ nav a:hover {
 .tracklist h2 {
   color: #333;
   font-size: 1.5em;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 
 .tracklist .lado {
@@ -155,7 +218,7 @@ nav a:hover {
 }
 
 .physical-versions p {
-  color: #666;
+  color: #020202;
   line-height: 1.5;
   margin-bottom: 10px;
 }

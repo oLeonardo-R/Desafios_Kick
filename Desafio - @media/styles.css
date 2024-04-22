@@ -1,0 +1,138 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #9e958d;
+  background-image: url(https://pbs.twimg.com/media/GFl4ujOXwAUF4-Y?format=jpg&name=large);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1200px;
+  flex: 1;
+}
+
+header {
+  background-color: #9e958d;
+  color: #000000;
+  padding: 20px 0;
+}
+
+header h1 {
+  font-size: 32px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ffd700;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+.video-convite {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.video-convite h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.video-convite p {
+  margin-bottom: 50px;
+}
+
+.btn-assistir {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-assistir:hover {
+  background-color: #555;
+}
+
+footer {
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: auto;
+}
+
+/* Estilos para telas pequenas */
+@media only screen and (max-width: 600px) {
+  header h1 {
+    font-size: 24px;
+  }
+
+  nav ul li {
+    margin-right: 10px;
+  }
+
+  .video-convite h3 {
+    font-size: 20px;
+  }
+
+  .video-convite p {
+    margin-bottom: 30px;
+  }
+
+  .btn-assistir {
+    padding: 8px 16px;
+  }
+}
+
+/* Estilos para telas médias e grandes */
+@media only screen and (min-width: 601px) {
+  header h1 {
+    font-size: 36px;
+  }
+
+  nav ul li {
+    margin-right: 20px;
+  }
+
+  .video-convite h3 {
+    font-size: 28px;
+  }
+
+  .video-convite p {
+    margin-bottom: 40px;
+  }
+
+  .btn-assistir {
+    padding: 10px 20px;
+  }
+}
