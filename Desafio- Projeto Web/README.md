@@ -1,10 +1,10 @@
-****  Tema para o desafio individual: CHOCOLATE ****
+                        ****  Tema para o desafio individual: Streming  ****
 
 
-![Apresentação](https://github.com/uLeonardoR/Desafios_Kick/assets/116850576/8dcea752-cecb-4945-bb58-9b63e69e3b8e)
-![Briefing](https://github.com/uLeonardoR/Desafios_Kick/assets/116850576/448b5984-8476-4c11-b027-dfcd01c8ebd6)
-![WireFreme](https://github.com/uLeonardoR/Desafios_Kick/assets/116850576/d6935adb-109f-4654-bc71-cb1f728d0d68)
-![Style Guide](https://github.com/uLeonardoR/Desafios_Kick/assets/116850576/fb3e4ae7-e3ad-4999-bbd1-7a0e935f89e1)
-![Pagina Inicial](https://github.com/uLeonardoR/Desafios_Kick/assets/116850576/951d2b58-b27d-4177-9af8-0b83b9d5a275)![FAQ](https://github.com/uLeonardoR/Desafios_Kick/assets/116850576/f9afb93a-7203-4dda-962c-bc4f3622764a)
-
-![SOBRE NÓS](https://github.com/uLeonardoR/Desafios_Kick/assets/116850576/a83c1f64-85f6-47f0-8e54-aac5836598f0)
+![briefing](https://github.com/uLeonardoR/Desafios_Kick/assets/116850576/8830eb5b-4b08-4647-8121-d8b59167bcbc)
+![Landing Page](https://github.com/uLeonardoR/Desafios_Kick/assets/116850576/fb439ad1-e093-4a37-8e15-76a597415d20)
+![Streming](https://github.com/uLeonardoR/Desafios_Kick/assets/116850576/7d3d8b34-7e5d-4e59-b6eb-93172b169e59)
+![PlanosKicker](https://github.com/uLeonardoR/Desafios_Kick/assets/116850576/79109c4d-6f3e-4e07-ae9b-1bb18b4708ba)
+![Celular (1)](https://github.com/uLeonardoR/Desafios_Kick/assets/116850576/68bb2f13-9eef-42c1-b651-2b486175051c)
+![Cell](https://github.com/uLeonardoR/Desafios_Kick/assets/116850576/1b0f3773-1f39-4c3c-9390-ae189a3f8a8f)
+![Style Guide](https://github.com/uLeonardoR/Desafios_Kick/assets/116850576/5df0043a-746c-48be-9270-9e0ce0c8175d)
