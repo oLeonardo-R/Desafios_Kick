@@ -1,4 +1,4 @@
-# Aplicação de Votação Simples - Desafio Parada 20 - Tecnologia
+# Aplicação de Votação - Desafio Parada 20 - Tecnologia
 
 ## Desafio- Instruções
 
