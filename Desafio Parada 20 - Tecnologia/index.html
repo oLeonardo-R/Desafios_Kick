@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Eleição</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f4f4f4;
+      }
+
+      h1 {
+        color: #333;
+      }
+
+      .container {
+        background-color: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      select {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+      }
+
+      button {
+        background-color: #4caf50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      button:hover {
+        background-color: #45a049;
+      }
+
+      #resultados {
+        display: none;
+        margin-top: 30px;
+        text-align: center;
+      }
+
+      #resultados h2 {
+        color: #333;
+        margin-bottom: 15px;
+      }
+
+      #resultados p {
+        margin: 5px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Eleição</h1>
+
+    <div class="container">
+      <select id="candidato">
+        <option value="">Selecione um candidato</option>
+        <option value="nulo">Nulo/Branco</option>
+        <option value="A">Candidato A</option>
+        <option value="B">Candidato B</option>
+        <option value="C">Candidato C</option>
+        <option value="D">Candidato D</option>
+      </select>
+      <button onclick="votar()">Votar</button>
+      <button onclick="encerrar()">Encerrar Votação</button>
+    </div>
+
+    <div id="resultados">
+      <h2>Resultados da Eleição:</h2>
+      <p>Candidato A: <span id="votosA">0</span> votos</p>
+      <p>Candidato B: <span id="votosB">0</span> votos</p>
+      <p>Candidato C: <span id="votosC">0</span> votos</p>
+      <p>Candidato D: <span id="votosD">0</span> votos</p>
+      <p>Nulos/Brancos: <span id="votosNulo">0</span> votos</p>
+    </div>
+
+    <script>
+      let votosA = 0;
+      let votosB = 0;
+      let votosC = 0;
+      let votosD = 0;
+      let votosNulo = 0;
+
+      function votar() {
+        const candidato = document.getElementById("candidato").value;
+
+        switch (candidato) {
+          case "A":
+            votosA++;
+            break;
+          case "B":
+            votosB++;
+            break;
+          case "C":
+            votosC++;
+            break;
+          case "D":
+            votosD++;
+            break;
+          case "nulo":
+            votosNulo++;
+            break;
+          default:
+            alert("Selecione um candidato válido!");
+            return;
+        }
+
+        alert("Voto computado com sucesso!");
+      }
+
+      function encerrar() {
+        document.getElementById("votosA").textContent = votosA;
+        document.getElementById("votosB").textContent = votosB;
+        document.getElementById("votosC").textContent = votosC;
+        document.getElementById("votosD").textContent = votosD;
+        document.getElementById("votosNulo").textContent = votosNulo;
+        document.getElementById("resultados").style.display = "block";
+      }
+    </script>
+  </body>
+</html>
