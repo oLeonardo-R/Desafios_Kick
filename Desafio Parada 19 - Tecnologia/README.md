@@ -1,5 +1,11 @@
-# Trocador de Cor de Fundo
+# Trocador de Cor de Fundo - Desafio Parada 19 - Tecnologia
 
+
+## Desafio 
+Desenvolva um código que peça uma cor para o usuário e troque a cor de fundo do site pela cor que o usuário escolheu.
+Dica: para testar coloque as cores com nomes em inglês para não precisar traduzir o nome da cor depois, utilize essa documentação como referência: https://www.w3schools.com/jsref/prop_style_backgroundcolor.asp
+
+## Instruções
 Este projeto permite que os usuários personalizem a cor de fundo de um site de forma simples e interativa. Utilizando HTML, CSS e JavaScript, o usuário pode inserir o nome de uma cor em inglês para alterar instantaneamente o fundo da página.
 
 ## Funcionalidades
