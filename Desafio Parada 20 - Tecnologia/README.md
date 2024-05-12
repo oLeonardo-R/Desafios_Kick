@@ -35,4 +35,4 @@ Este é um exemplo básico de uma aplicação web para votação, desenvolvida c
 
 ## Autor
 
-Leonardo R
+- Leonardo R
