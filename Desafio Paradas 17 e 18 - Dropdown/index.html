@@ -11,14 +11,13 @@
     <header class="header">
       <nav class="nav">
         <a href="/">
-          <img class="logo" src="./kickstarter-logo-1.png" alt=""
-        /></a>
+          <img class="logo" src="./kickstarter-logo-1.png" alt="" />
+        </a>
         <button class="hamburger"></button>
         <ul class="nav-list">
           <li><a href="#">PS5</a></li>
-
           <li><a href="#">XBOX</a></li>
-          <li>
+          <li class="has-submenu">
             <a href="#">SAIBA MAIS</a>
             <ul class="submenu">
               <li><a href="#">Sobre Nós</a></li>
@@ -29,12 +28,12 @@
       </nav>
     </header>
     <main class="hero"></main>
+
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const nav = document.querySelector(".nav");
+
+      hamburger.addEventListener("click", () => nav.classList.toggle("active"));
+    </script>
   </body>
-
-  <script>
-    const hamburger = document.querySelector(".hamburger");
-    const nav = document.querySelector(".nav");
-
-    hamburger.addEventListener("click", () => nav.classList.toggle("active"));
-  </script>
 </html>
