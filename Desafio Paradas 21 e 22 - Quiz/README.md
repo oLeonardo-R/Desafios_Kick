@@ -17,6 +17,6 @@ Este é um projeto simples de quiz geek desenvolvido em HTML e JavaScript. O qui
 4. Veja o feedback imediato sobre sua resposta.
 5. Após responder todas as perguntas, veja seu resultado final.
 
-## Estrutura do Projeto
+# Estrutura do Projeto
 
 O projeto consiste em um único arquivo HTML contendo todo o código necessário para executar o quiz.
