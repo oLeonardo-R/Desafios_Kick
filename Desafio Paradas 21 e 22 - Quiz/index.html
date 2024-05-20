@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Geek</title>
+  </head>
+  <body>
+    <h1>Quiz Geek</h1>
+    <div id="quiz">
+      <p id="pergunta"></p>
+      <input type="text" id="resposta" placeholder="Digite sua resposta" />
+      <button onclick="verificarResposta()">Enviar Resposta</button>
+      <p id="feedback"></p>
+    </div>
+    <p id="resultado"></p>
+
+    <script>
+      const perguntas = [
+        {
+          pergunta: "Qual é o nome do herói mascarado de Gotham City?",
+          resposta: "Batman",
+        },
+        { pergunta: "Quem é o melhor amigo de Harry Potter?", resposta: "Ron" },
+        {
+          pergunta: "Qual é o nome do robô dourado em Star Wars?",
+          resposta: "C-3PO",
+        },
+        {
+          pergunta: "Quem vive em um abacaxi no fundo do mar?",
+          resposta: "Bob Esponja",
+        },
+        {
+          pergunta:
+            "Qual é o nome do personagem principal em 'The Legend of Zelda'?",
+          resposta: "Link",
+        },
+      ];
+
+      let indicePerguntaAtual = 0;
+      let pontuacao = 0;
+
+      function mostrarPergunta() {
+        document.getElementById("pergunta").innerText =
+          perguntas[indicePerguntaAtual].pergunta;
+        document.getElementById("resposta").value = "";
+        document.getElementById("feedback").innerText = "";
+      }
+
+      function verificarResposta() {
+        const respostaUsuario = document.getElementById("resposta").value;
+        const respostaCorreta = perguntas[indicePerguntaAtual].resposta;
+
+        if (
+          respostaUsuario.trim().toLowerCase() === respostaCorreta.toLowerCase()
+        ) {
+          document.getElementById("feedback").innerText = "Correto!";
+          pontuacao++;
+        } else {
+          document.getElementById(
+            "feedback"
+          ).innerText = `Errado! A resposta correta é ${respostaCorreta}.`;
+        }
+
+        indicePerguntaAtual++;
+
+        if (indicePerguntaAtual < perguntas.length) {
+          setTimeout(mostrarPergunta, 2000);
+        } else {
+          setTimeout(mostrarResultado, 2000);
+        }
+      }
+
+      function mostrarResultado() {
+        document.getElementById("quiz").style.display = "none";
+        document.getElementById(
+          "resultado"
+        ).innerText = `Você acertou ${pontuacao} de ${perguntas.length} perguntas.`;
+      }
+
+      mostrarPergunta();
+    </script>
+  </body>
+</html>
