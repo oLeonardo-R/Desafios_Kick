@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nomes Aleatórios</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Gerador de Nomes Turma J Kick</h1>
+    <p>Clique no botão para gerar um nome aleatório:</p>
+    <button onclick="gerarNome()">Gerar Nome</button>
+    <p id="nomeGerado"></p>
+
+    <script>
+      function nomeAleatorio() {
+        const nomes = [
+          "Thalita",
+          "Ana",
+          "Antonio",
+          "Cristina",
+          "Emanuelli",
+          "Gustavo",
+          "Isabella",
+          "Jerihane",
+          "Mateus",
+          "Rhayan",
+        ];
+        const indiceAleatorio = Math.floor(Math.random() * nomes.length);
+        return nomes[indiceAleatorio];
+      }
+
+      function gerarNome() {
+        const nomeGerado = nomeAleatorio();
+        document.getElementById("nomeGerado").textContent =
+          "Nome Gerado: " + nomeGerado;
+      }
+    </script>
+  </body>
+</html>
