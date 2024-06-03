@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kicker Anime</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+     
+          <span id="nome-usuario">Usuário</span>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="comentarios">
+        <h3>Deixe seu Comentários</h3>
+        <div class="deixar-comentario">
+          <textarea
+            id="comentario"
+            placeholder="Deixe seu comentário aqui"
+          ></textarea>
+          <button class="botao-enviar" onclick="adicionarComentario()">
+            Enviar
+          </button>
+        </div>
+        <div class="lista-comentarios" id="lista-comentarios">
+          <!-- Os comentários serão inseridos aqui pelo JavaScript -->
+        </div>
+      </section>
+    </main>
+    <script src="leoscript.js"></script>
+  </body>
+</html>
