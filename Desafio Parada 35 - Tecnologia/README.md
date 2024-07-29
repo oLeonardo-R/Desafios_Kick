@@ -1,7 +1,10 @@
+
+
+Link OneDrive : https://1drv.ms/u/s!Al0qj_cqjOiUhqYrOKhmq4KDbELthA?e=ZqrxqV
+
 # Portfólio de Leonardo
 
 ## Sobre Mim
-
 Olá! Sou o Leonardo, um entusiasta da tecnologia mergulhando de cabeça na área de front-end. Minha jornada na programação começou na faculdade de Ciências da Computação e se aprofundou com o curso da Kick, onde estou aprendendo os fundamentos e me preparando para ser um profissional de destaque nesse campo. Sou apaixonado por criar interfaces intuitivas e responsivas, e estou sempre em busca de novos desafios para aprimorar minhas habilidades.
 
 ## Habilidades Técnicas
